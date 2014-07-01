@@ -16,3 +16,13 @@ window.onload = function(){
 
     testdiv.appendChild(para);
 }
+
+//自定义 insertAfter() 函数
+function insertAfter(newElement,targetElement){
+    var parent = targetElement.parentNode;
+    if(parent.lastChild == targetElement){
+        parent.appendChild(newElement);
+    }else{
+        parent.insertBefore(newElement,targetElement.nextSibling);
+    }
+}

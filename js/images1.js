@@ -5,8 +5,12 @@
 function showPic(whichpic){
     var source = whichpic.getAttribute("href");
     var placeholder = document.getElementById("placeholder");
+    var description = document.getElementById("description");
+    var text = whichpic.getAttribute("title");
 
     placeholder.setAttribute("src",source);
+    description.firstChild.nodeValue = text;
+
 }
 //计算body子元素数量
 function countBodyChildren(){
@@ -14,4 +18,8 @@ function countBodyChildren(){
     alert(body_element.childNodes.length);
 }
 
-window.onload = countBodyChildren;
+//open 方法封装得方法
+function popUp(winURL){
+    window.open(winURL,"popup","width=320,height=480");
+}
+

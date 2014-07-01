@@ -24,3 +24,10 @@ img{
     display: block;
     clear: both;
 }
+
+#imagegallery li{
+    display: inline;
+}
+#imagegallery{
+    list-style: none;
+}

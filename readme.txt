@@ -55,4 +55,6 @@ node.childNodes
 object.innerHTML
 child.parentNode
 node.nextSibling
-
+node.previousSibing
+element.style.property
+element.className = value
